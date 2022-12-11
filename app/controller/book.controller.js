@@ -53,7 +53,7 @@ module.exports = class bookController{
                 .offset(+page * +limit - +limit)
                 .orderBy("b.created_at", order)
                 .where("b.title", "like", `%${seacrh}`)
-            console.log(book);
+            
 
                 return res.json({
                     success: true,
